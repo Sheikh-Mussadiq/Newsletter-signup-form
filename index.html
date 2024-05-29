@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <main class="container">
+    <div class="section__wrapper">
+      <section class="text-container">
+        <h1 class="title">Stay updated!</h1>
+        <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul class="list">
+          <li class="list__item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list" class="list__icon">
+            <span class="list__item--text">Product discovery and building what matters</span> 
+          </li>
+
+          <li class="list__item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list" class="list__icon">
+            <span class="list__item--text">Measuring to ensure updates are a success</span>
+          </li>
+
+          <li class="list__item">
+            <img src="./assets/images/icon-list.svg" alt="icon-list" class="list__icon">
+            <span class="list__item--text">And much more!</span>
+          </li>
+        </ul>
+
+        <form class="form" id="form">
+          <div class="error__wrapper">
+            <label for="email" class="form__label">Email address</label>
+            <span class="error-message" id="error-message"></span>
+          </div>
+            <input type="email" id="email" name="email" placeholder="email@company.com" class="form__input">
+            <button type="submit" class="form__button">Subscribe to monthly newsletter</button>
+        </form>
+        
+      </section>
+      <picture>
+        <source media="(min-width: 600px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign-up" class="illustration__img">
+      </picture>
+    </div>
+  </main>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div class="container success__container hidden">
+    <div class="success__container--wrapper">
+      <img src="./assets/images/icon-success.svg" alt="icon success" class="icon__success">
+      <h1 class="title">Thanks for subscribing!</h1>
+      <p class="list__item--text">A confirmation email has been sent to <span class="user-email" id="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismiss__btn" id="dismiss-btn">Dismiss message</button>
+    </div>
+  </div>
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sheikh-Mussadiq</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
