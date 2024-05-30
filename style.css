@@ -44,9 +44,9 @@ body {
 }
 .container {
     background-color: var(--White);
-    border-radius: var(--br-10);
+    border-radius: 30px;
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     margin-inline: auto;
 }
 .section__wrapper {
